@@ -1,15 +1,18 @@
+body{
+    background-color: #98b9f2
+}
 h1{
     font-family: 'Indie Flower', cursive;
-    color: #141b41
+    color: #918ef4
 }
 h2,h3{
     font-family:'Josefin Sans', sans-serif;
     color: #306bac
 }
-P{
+p{
     font-family: 'Raleway', sans-serif;
     color: #6f9ceb
 }
-#main{
-    color: #98b9f2
+li{
+    color: #141b41
 }
