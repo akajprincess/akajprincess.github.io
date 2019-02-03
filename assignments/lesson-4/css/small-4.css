@@ -68,3 +68,6 @@ nav a:hover {
 	height: 500px;
 	width: 600px;
 }
+img{
+	max-width: 600px;
+}
