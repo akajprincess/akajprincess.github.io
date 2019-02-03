@@ -20,7 +20,13 @@ img{
 .landscape {
 	height: 180px;
 	}
-	
+.hero{
+	height: 480px;
+}
+.article{
+	height: 480px;
+	border-radius: 25px;
+}	
 #content {
 	width: 75%;
 	margin:0 auto;
