@@ -1,6 +1,5 @@
 body{
     background-color: #98b9f2
-    font-size: 16px;
 }
 header {
 	margin: 10px auto;
@@ -34,7 +33,7 @@ nav {
 	text-align: center;
 	box-shadow: 0px 3px 3px #918ef4
 	padding: 0;
-	overflow: hidden;
+	overflow: hidden
 }
 nav ul {
 	list-style-type: none;
