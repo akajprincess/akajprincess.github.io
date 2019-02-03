@@ -11,6 +11,7 @@ header img, .headings {
 	display: inline-block;
 	vertical-align: middle;
 	margin: 10px;
+	max-width: 600px;
 }
 h1{
     font-family: 'Indie Flower', cursive;
@@ -49,6 +50,11 @@ nav a {
 nav a:hover {
 	background-color: #1f2a63;
 	color: #36454f;
+	font-size: 1.2em;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px;
+	height: 30px;
+	
 }
 .h li {
 	display: inline-block;
@@ -68,6 +74,67 @@ nav a:hover {
 	height: 500px;
 	width: 600px;
 }
-img{
-	max-width: 600px;
-}
+#content {
+	width: 75%;
+	margin:0 auto;
+  }
+  
+#row1{
+	padding: 1.1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	  }
+  
+#row2 {
+	color:		#1f2a63;
+	background-color: #36454f;
+	padding: 1.1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;  
+	  }
+#row3{
+	padding: 1.1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	  }
+ .right-column {
+		width:48%;
+		padding: 1em;
+		border: 28px;
+		display: flex;
+		flex-flow: row wrap;
+		flex: 1 0 15em;
+	}
+.left-column {
+		width:48%;
+		padding: 1em;
+		border: 28px;
+		display: flex;
+		flex-flow: row wrap;
+		flex: 1 0 15em;
+		line-height: 1.1em;
+	}
+#logo {
+		position: absolute;
+		top: 0px;
+		background-color: #36454f;
+		border: solid thick#1f2a63;
+		margin-left: 20px;
+		border-radius: 15px;
+	  }
+footer{
+		margin:5 auto;
+		justify-content: space-between;
+		border-top:solid 2px #1f2a63;
+		padding: 10px;
+		line-height: 3em;
+		display:flex;
+		  flex-flow: row wrap;
+		  flex: 1 0 15em;  
+	  }
