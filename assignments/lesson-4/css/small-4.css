@@ -56,3 +56,15 @@ nav a:hover {
 .v li {
 	display: block;
 }
+.mapouter {
+	text-align: right;
+	height: 500px;
+	width: 600px;
+}
+
+.gmap_canvas {
+	overflow: hidden;
+	background: none !important;
+	height: 500px;
+	width: 600px;
+}
