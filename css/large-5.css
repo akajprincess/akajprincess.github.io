@@ -38,8 +38,7 @@ h2 {text-align: center;font-size:2rem;text-shadow:3px 3px 5px #777;}
 	position: absolute;
 	top: 25px;
 	right: 50px;
-	background: radial-gradient(#eee, #4567aa;);
-	border: 1px solid #000;
+		border: 1px solid;
 	padding: 1.5rem;
-	box-shadow: 0 0 30px #fff;
+	box-shadow: 0 0 30px;
 }
