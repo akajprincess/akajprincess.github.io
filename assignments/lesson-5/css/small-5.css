@@ -105,10 +105,10 @@ li{
   }
 #logo {
 		position: absolute;
-		top: 30px;
+		top: 10px;
 		background-color: #36454f;
 		border: solid thick#1f2a63;
-		margin-left: 20px;
+		margin-left: 10%;
 		border-radius: 15px;
 }
 footer{
@@ -177,6 +177,7 @@ footer{
 #weather-summary {
 
 		display: none;
+		border-radius: 15px;
 
 }
 
@@ -197,9 +198,22 @@ ul.topnav li.right {
 
 #current-weather{
 		position: absolute;
-		top: 30px;
+		top: 18px;
 		background-color: #36454f;
 		border: solid thick#1f2a63;
-		margin-right: 20px;
+		margin-left: 75%;
 		border-radius: 15px;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 20px;
+	left: 30px;
+	background-color: #36454f;
+	border: solid thick#1f2a63;
 }
