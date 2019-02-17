@@ -60,7 +60,7 @@ li{
 	height: 500px;
 	width: 600px;
 }
-#row1{
+.row1{
 	padding: 1.1em;
 	display: flex;
 	flex-flow: row wrap;
