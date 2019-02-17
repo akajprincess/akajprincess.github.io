@@ -6,6 +6,7 @@ header {
 	border: 1px solid #1f2a63;
 	box-shadow: 0 0 30px #5579b8;
 	text-align: center;
+	height: 320px;
 }
 header img, .headings {
 	display: inline-block;
@@ -106,7 +107,7 @@ li{
   }
 #logo {
 		position: absolute;
-		top: 10px;
+		top: 60px;
 		background-color: #36454f;
 		border: solid thick#1f2a63;
 		margin-left: 10%;
@@ -199,7 +200,7 @@ ul.topnav li.right {
 
 #current-weather{
 		position: absolute;
-		top: 18px;
+		top: 38px;
 		background-color: #36454f;
 		border: solid thick#1f2a63;
 		margin-left: 75%;
@@ -213,7 +214,7 @@ ul.topnav li.right {
 
 .top-left {
   position: absolute;
-  top: 20px;
+  top: 30px;
 	left: 30px;
 	background-color: #36454f;
 	border: solid thick#1f2a63;
