@@ -9,6 +9,7 @@
     <meta name="keywords" content="Weather, Town News, Preston, Soda Springs, Fish Haven, Storm Center, Gallery">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Raleway" rel="stylesheet" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="weather-1.css">
     <link href="css/small-5.css" type="text/css" rel="stylesheet" />
     <link href="css/large-5.css" type="text/css" rel="stylesheet" />
     <title>Preston</title>
@@ -85,12 +86,89 @@
             <section id="row3">
                 <div class="weather-summary">
                     <h2>7 Day Weather Forecast</h2>
-                    <p>
-                        <!-- weather widget start --><a target="_blank"
-                            href="https://www.booked.net/weather/salt-lake-city-1239"><img
-                                src="https://w.bookcdn.com/weather/picture/3_1239_1_1_137AE9_430_ffffff_333333_08488D_1_ffffff_333333_0_6.png?scode=124&domid=w209&anc_id=71550"
-                                alt="booked.net" /></a><!-- weather widget end -->
-                    </p>
+                    <div class="weather-forecast" role="main">
+                        <div class="location">New York, NY</div>
+                        <div class="date">Tuesday, April 15th</div>
+                        <div class="desc">Overcast</div>
+                        <div class="current">
+                            <div class="visual">
+                                <div class="icon cloudy"></div>
+                                <div class="temp">58</div>
+                                <div class="scale">&deg;F</div>
+                            </div>
+                            <div class="description">
+                                <div class="precip">100%</div>
+                                <div class="humidity">97%</div>
+                                <div class="wind">4 mph SW</div>
+                                <div class="pollen">36</div>
+                            </div>
+                        </div>
+                        <div class="seven-day">
+                            <div class="seven-day-fc">
+                                <div class="date">Today</div>
+                                <div class="icon thunder"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">68&deg;</div>
+                                    <div class="temp-low">36&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                            <div class="seven-day-fc">
+                                <div class="date">Wednesday</div>
+                                <div class="icon sunny"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">50&deg;</div>
+                                    <div class="temp-low">39&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                            <div class="seven-day-fc">
+                                <div class="date">Thursday</div>
+                                <div class="icon sunny"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">55&deg;</div>
+                                    <div class="temp-low">39&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                            <div class="seven-day-fc">
+                                <div class="date">Friday</div>
+                                <div class="icon pc"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">54&deg;</div>
+                                    <div class="temp-low">43&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                            <div class="seven-day-fc">
+                                <div class="date">Saturday</div>
+                                <div class="icon sshowers"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">64&deg;</div>
+                                    <div class="temp-low">46&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                            <div class="seven-day-fc">
+                                <div class="date">Sunday</div>
+                                <div class="icon sshowers"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">64&deg;</div>
+                                    <div class="temp-low">50&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                            <div class="seven-day-fc">
+                                <div class="date">Monday</div>
+                                <div class="icon pc"></div>
+                                <div class="seven-day-temp">
+                                    <div class="temp-high">61&deg;</div>
+                                    <div class="temp-low">50&deg;</div>
+                                </div>
+                                <div class="pcount">36</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
             <section id="row2">
@@ -151,7 +229,7 @@
                 &copy;2019 Amber Katheryn Anne Thomsen Utah <a href="http://www.byui.edu/online">BYU-Idaho Online
                     Learning</a>
             </p>
-                <span id="currentDate"></span>
+            <span id="currentDate"></span>
         </div>
     </footer>
 </body>
