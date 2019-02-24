@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preest Idaho Weather and Town News">
+    <meta name="author" content="Amber Thomsen">
+    <meta name="theme-color" content="#98b9f2" />
+    <meta name="keywords" content="Weather, Town News, Preston, Soda Springs, Fish Haven, Storm Center, Gallery">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="css/small-5.css" type="text/css" rel="stylesheet" />
+    <link href="css/large-5.css" type="text/css" rel="stylesheet" />
+    <script src="scripts/currentdate.js" defer></script>
+    <script type="text/javascript" src="scripts/hamburger.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+    <title>Preston</title>
+</head>
+
+
+<body id="content">
+    <header>
+        <h1>Smart Weather Travel</h1>
+        <div id="logo">
+            <img src="images/weather-logo.jpg" alt="weather logo" class="landscape">
+        </div>
+        <div>
+            <h2>Washing Machines Live Longer with Smart Weather Travel.</h2>
+            <div id="current-weather">
+                <a class="weatherwidget-io" href="https://forecast7.com/en/42d10n111d88/preston/" data-label_1="PRESTON"
+                    data-label_2="WEATHER" data-mode="Current" data-days="3" data-theme="retro-sky">PRESTON WEATHER</a>
+                <script>
+                    !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                </script>
+            </div>
+        </div>
+        <br><br>
+        <div class="dropdown">
+            <button class="dropbtn">Menu</button>
+            <div class="dropdown-content">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="preston-7.html">Preston</a></li>
+                    <li><a href="#">Soda Springs</a></li>
+                    <li><a href="#">Fish Haven</a></li>
+                    <li><a href="#">Storm Center</a></li>
+                    <li><a href="gallery-7.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div>
+            <section class="container row1">
+                
+                <img src="images/preston-idaho-downtown.jpg" alt="hero image" class="hero">
+                <div class="top-left">
+                    <h3>Weather Summary</h3>
+                    <p> Precipitation</p>
+                    <p> UV Index</p>
+                    <p> Sunrise</p>
+                    <p> Sunset</p>
+                    <p> Temperature <input type="text" id="tempF" size="5"><br>
+                    Wind Speed <input type="text" id="speed" size="5"><br>
+                    <button type="button" onclick="doInputOutput()">Wind Chill</button>
+                    <div id="outputDiv"></div></p>
+
+                </div>
+                <!--https://www.flickr.com/photos/kenlund/1122957169-->
+            </section>
+            <section>
+                <div>
+                    <h3>7 Day Weather Forecast</h3>
+                    <a class="weatherwidget-io" href="https://forecast7.com/en/42d10n111d88/preston/"
+                        data-label_1="PRESTON" data-label_2="WEATHER" data-theme="retro-sky">PRESTON WEATHER</a>
+                    <script>
+                        !function (d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (!d.getElementById(id)) { js = d.createElement(s); js.id = id; js.src = 'https://weatherwidget.io/js/widget.min.js'; fjs.parentNode.insertBefore(js, fjs); } }(document, 'script', 'weatherwidget-io-js');
+                    </script>
+                </div>
+                <br>
+            </section>
+            <section id="row2">
+                <div id="left-column">
+                    <article>
+                        <h2>Article title</h2>
+                        <h3>by author</h3>
+                        <p>djaskghkjdsafh asdjfhdhjkafh ahsdfjhkajfdhjkds hadhsjkfh alhdfsjadhf kh</p>
+                    </article>
+                </div>
+                <div>
+                    <img src="images/House-Preston-Napoleon-Dynamite.jpg" alt="article image" class=article>
+                    <!--http://idaho.for91days.com/preston-idaho-home-of-napoleon-dynamite/-->
+                </div>
+            </section>
+            <section class="row1 container">
+                <div>
+                    <h3>Contact Information</h3>
+                    <p>Swing by and see our city, or leave us a message!</p>
+                    <img src="images/preston-idaho.png" alt="preston-idaho map">
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <div id="copyright">
+            <p>
+                &copy;2019 Amber Katheryn Anne Thomsen Utah <a href="http://www.byui.edu/online">BYU-Idaho Online
+                    Learning</a>
+                <span id="currentDate">asdfasdf</span>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>

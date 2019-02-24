@@ -1,0 +1,15 @@
+body {
+    margin: 40px;
+  }
+  
+  .wrapper {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-gap: 10px;
+  }
+  
+  .box {
+    border-radius: 55px;
+    padding: 20px;
+    font-size: 150%;
+  }

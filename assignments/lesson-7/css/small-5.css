@@ -1,0 +1,248 @@
+body{
+    background-color: #98b9f2
+}
+header {
+	margin: 10px auto;
+	border: 1px solid #1f2a63;
+	box-shadow: 0 0 30px #5579b8;
+	text-align: center;
+	height: 320px;
+	display: flex;
+}
+header img, .headings {
+	display: flex;
+	vertical-align: middle;
+	margin: 10px;
+	max-width: 600px;
+}
+img{
+	max-width: 100%;
+	max-height: 100%;
+	border-radius: 15px;
+	display: flex;
+}
+.landscape {
+	height: 180px;
+	}
+
+.article{
+	height: 480px;
+	border-radius: 25px;
+}	
+#content {
+	width: 75%;
+	margin:0 auto;
+  }
+h1{
+    font-family: 'Indie Flower', cursive;
+    color: #5579b8
+}
+h2,h3{
+    font-family:'Josefin Sans', sans-serif;
+    color: #306bac
+}
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #6f9ceb
+}
+li{
+    color: #141b41
+}
+.row1{
+	padding: 1.1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	height: 480px;
+}
+  
+#row2 {
+	color:		#1f2a63;
+	background-color: #36454f;
+	padding: 1.1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;  
+}
+#row3{
+	padding: 1.1em;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+}
+ .right-column {
+		width:48%;
+		padding: 1em;
+		border: 28px;
+		display: flex;
+		flex-flow: row wrap;
+		flex: 1 0 15em;
+}
+.left-column {
+		width:48%;
+		padding: 1em;
+		border: 28px;
+		display: flex;
+		flex-flow: row wrap;
+		flex: 1 0 15em;
+		line-height: 1.1em;
+}
+.left-column img, .right-column img {
+	box-shadow: 7px 7px 7px #98b9f2;
+	border-radius: 25px;
+  }
+#logo {
+		position: absolute;
+		top: 60px;
+		background-color: #36454f;
+		border: solid thick#1f2a63;
+		margin-left: 10%;
+		border-radius: 15px;
+}
+footer{
+	margin: auto;
+	justify-content: space-between;
+	border-top:solid 2px #1f2a63;
+	padding: 10px;
+	line-height: 3em;
+	display:flex;
+		  flex-flow: row wrap;
+		  flex: 1 0 15em;  
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 25%;
+  height: 100%; /* Full height */
+  position: fixed; /* Make it stick, even on scroll */
+  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+}
+.dropbtn {
+	background-color: #6f9ceb;
+	color: #36454f;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+}
+  
+.dropdown {
+	position: relative;
+	display: flex;
+}
+  
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #918ef4;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px;
+	z-index: 1;
+	border-radius: 5px;
+}
+  
+.dropdown-content a {
+	color: #1f2a63;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: flex;
+	text-align: center;
+	padding: 15px;
+	text-decoration: none;
+	font-size: 1.5rem;
+	border-radius: 5px;
+}
+  
+.dropdown-content a:hover {
+	  background-color: #918ef4;
+	  border-radius: 5px;
+	}
+  
+.dropdown:hover .dropdown-content {
+	  display: block;
+}
+  
+.dropdown:hover .dropbtn {
+	 background-color: #1f2a63;
+	color: #36454f;
+	font-size: 1.2em;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px;
+	height: 30px;
+}
+#weather-summary {
+
+		display: flex;
+		border-radius: 15px;
+
+}
+
+ul.topnav li {
+	float: left;
+}
+
+ul.topnav li.right {
+	float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {
+		float: none;
+	}
+}
+
+#current-weather{
+		position: absolute;
+		top: 38px;
+		background-color: #36454f;
+		border: solid thick#1f2a63;
+		margin-left: 75%;
+		border-radius: 15px;
+		display: flex;
+}
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.top-left {
+  position: absolute;
+  top: 30px;
+	left: 30px;
+	background-color: #36454f;
+	border: solid thick#1f2a63;
+	border-radius: 15px;
+}
+
+.responsive .dropdown {
+	display: block;
+	}
+
+div.fullWidth {
+  width: 100%;
+}
+
+@media (min-width: 360px) {
+  body {
+    font-size: 1.0em;
+  }
+}
+
+@media (min-width: 575px) {
+  article {
+    width: 550px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.hero {
+	margin: 10px auto;
+	position: relative;
+	width: 100%
+	}
