@@ -117,9 +117,9 @@ ul {
   margin: 0;
   padding: 0;
   width: 25%;
-  height: 100%; /* Full height */
-  position: fixed; /* Make it stick, even on scroll */
-  overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  height: 100%;
+  position: fixed; 
+  overflow: auto; 
 }
 nav {
 	background-color: #9c92a3;
@@ -138,8 +138,6 @@ font-size: 1.2em;
 border-radius: 5px;
 box-shadow: 5px 5px 5px;
 height: 30px;
-text-decoration: underline;
-text-decoration-style: wavy;
 }
 
 li {
@@ -159,8 +157,6 @@ ul.topnav {
 ul.topnav li a {
 	display: inline-block;
 	padding: 14px 16px;
-	text-decoration: underline;
-	text-decoration-style: wavy;
 }
 
 
@@ -196,7 +192,6 @@ top: 0;
 
 }
 
-
 #current-weather{
 		position: absolute;
 		top: 38px;
@@ -219,10 +214,6 @@ top: 0;
 	border: solid thick#1f2a63;
 	border-radius: 15px;
 }
-
-.responsive .dropdown {
-	display: block;
-	}
 
 div.fullWidth {
   width: 100%;
