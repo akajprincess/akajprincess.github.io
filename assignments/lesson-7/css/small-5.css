@@ -99,7 +99,7 @@ li{
 		top: 60px;
 		background-color: #36454f;
 		border: solid thick#1f2a63;
-		margin-left: 10%;
+
 		border-radius: 15px;
 }
 footer{
@@ -116,10 +116,8 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  width: 25%;
-  height: 100%;
-  position: fixed; 
-  overflow: auto; 
+	overflow: hidden; 
+	border: 1px;
 }
 nav {
 	background-color: #9c92a3;
@@ -130,6 +128,7 @@ nav {
 	height: 40px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
+	width: 100%;
 } 
 
 nav a:hover {
@@ -141,8 +140,21 @@ height: 30px;
 }
 
 li {
-display: inline-block;
+display: inline;
+text-align: center;
+float: left;
+}
 
+li a {
+  display: block;
+  padding: 8px 16px;
+	text-decoration: none;
+	background-color: #306bac;
+	text-align: center;
+}
+
+li:last-child {
+  border-bottom: none;
 }
 
 ul.topnav {
@@ -197,7 +209,7 @@ top: 0;
 		top: 38px;
 		background-color: #36454f;
 		border: solid thick#1f2a63;
-		margin-left: 75%;
+	
 		border-radius: 15px;
 		display: flex;
 }
