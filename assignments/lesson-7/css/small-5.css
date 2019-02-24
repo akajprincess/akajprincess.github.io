@@ -128,7 +128,6 @@ nav {
 	height: 40px;
 	border-top-left-radius: 15px;
 	border-top-right-radius: 15px;
-	width: 100%;
 } 
 
 nav a:hover {
@@ -137,6 +136,7 @@ font-size: 1.2em;
 border-radius: 5px;
 box-shadow: 5px 5px 5px;
 height: 30px;
+width: 100%;
 }
 
 li {
