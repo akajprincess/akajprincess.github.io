@@ -4,7 +4,7 @@ function doInputOutput() {
     var speed = parseFloat(document.getElementById('speed').value);
     var chill = windChill(tempF, speed)
 
-    document.getElementById("outputDiv").innerHTML = chill;
+    document.getElementById("outputDiv")("windspeed").value = chill;
 }
 
 function windChill(tempF, speed) {

@@ -3,13 +3,22 @@ body {
   }
   
   .wrapper {
-    display: grid;
-    grid-template-columns: 400px 400px 400px;
-    grid-gap: 10px;
+    display: grid; 
+    grid-template-columns: 500px 500px 500px;
+    grid-gap: 50px;
+    position: relative;
+    text-align: center;
   }
+
+
   
   .box {
     border-radius: 55px;
     padding: 20px;
     font-size: 150%;
+  }
+
+  .a {
+    height: 64px;
+    width: 64px;
   }
