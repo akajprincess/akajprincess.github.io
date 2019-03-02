@@ -1,33 +1,32 @@
-nav {
-	max-width: 960px;
-	margin: 0 auto;
-	text-align: center;
-	box-shadow: 0px 3px 3px;
-	padding: 0;
-	overflow: hidden;
-}
+@media (min-width: 35em) {
+	
 
-nav ul {
-	list-style-type: none;
-	padding: 0;
-}
+	.topnav {
+		flex-direction: row;
+	}
 
-nav a {
-	display: block;
-	text-align: center;
-	padding: 15px;
-	text-decoration: none;
-	font-size: 1.5rem;
-}
+	.topnav li:first-child {
+		display:none;
+	}
 
-.h li {
-	display: inline-block;
-}
+	.topnav li {
+		display: block;
+	}
+	
+	
+	.article img {
+		float: right;
+		width: 300px;
 
-.v li {
-	display: block;
-}
-body {
-	margin: 0;
-}
+	}
 
+	.contactinformation {
+		clear: both;
+	}
+
+	.forecast {
+		display: block;
+	}
+
+
+}
