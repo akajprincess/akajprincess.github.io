@@ -4,7 +4,7 @@
 }
 
 body{
-		background-color: #98b9f2;
+		background-color: #395243;
 		font-size: 16px;
 }
 
@@ -13,17 +13,18 @@ main, footer {
 	margin: 0 auto;
 }
 
-h1{
-	font-family: 'Indie Flower', cursive;
-	color: #5579b8
-}
-h2,h3{
+h1,h2,h3,h4{
 	font-family:'Josefin Sans', sans-serif;
-	color: #306bac
+	color: #0b3142;
 }
+h4{
+	font-family: 'Indie Flower', cursive;
+	color: #1478a7;
+}
+
 p{
 	font-family: 'Raleway', sans-serif;
-	color: #6f9ceb
+	color:  #25082e;
 }
 
 img {
@@ -32,13 +33,11 @@ img {
 
 header {
 	margin: 10px auto;
-	border: 1px solid #1f2a63;
-	box-shadow: 0 0 30px #5579b8;
+	border: 1px solid #395243;
 	text-align: center;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 15px;
 }
 
 .logo img {
@@ -56,11 +55,8 @@ header {
 }
 
 
-
-
 nav {
-	background-color: #000;
-	border-radius: 15px;
+	background-color: #0b3142;;
 
 }
 
@@ -84,7 +80,7 @@ nav {
   display: block;
   padding: 8px;
 	text-decoration: none;
-	background-color: #306bac;
+	background-color: #113e6e;
 	color: #000;
 	text-align: center;
 	font-size: 1.2rem;
@@ -118,7 +114,7 @@ height: auto;
   top: 10px;
 	left: 10px;
 	background-color: #36454f;
-	border: solid thick#1f2a63;
+	border: solid thick#395243;
 	border-radius: 15px;
 	padding: 10px;
 }
@@ -138,14 +134,20 @@ height: auto;
 	display: none;
 }
 
+.thright {
+	font-family: 'Raleway', sans-serif;
+	color:  #25082e;
+	
+}
+
 .article img {
 	width: 100%;
 	height: auto;
 }
 
 .article {
-	color: rgb(31, 42, 99);
 	background-color: rgb(54, 69, 79);
+	padding: 8px;
 	border-radius: 15px;
 }
 
