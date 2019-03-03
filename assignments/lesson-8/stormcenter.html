@@ -43,16 +43,16 @@
     <main>
         <h1>Storm Center</h1>
         <h2>Report a storm or unusual weather event in your travel area.</h2>
-        <form action="/thanks.html" method="get">
-            <label for="fname">Full Name</label>
-            <input type="text" id="fname" name="fullname" pattern="[A-Za-z\s]{5,}" placeholder="Your name.." required>
-            <label for="phone">Enter your phone number:</label>
+        <form action="/thanks.html" method="POST">
+            <p><label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fullname" pattern="[A-Za-z\s]{5,}" placeholder="Your name.." required></p>
+            <p><label for="phone">Enter your phone number:</label>
             <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
-                required>
-            Email: <input type="email" placeholder="usersemail@email.org" required>
-            Zip code: <input id="zip" name="zip" type="number" pattern="[0-9]*" placeholder="83263" required>
-            Storm Date: <input type="date" name="stormdate">
-            Storm Type: <input list="stormtype" name="stormtype">
+                required> </p>
+                <p>Email: <input type="email" placeholder="usersemail@email.org" required></p>
+                    <p>Zip code: <input id="zip" name="zip" type="number" pattern="[0-9]*" placeholder="83263" required></p>
+                        <p>Storm Date: <input type="date" name="stormdate"></p>
+                            <p>Storm Type: <input list="stormtype" name="stormtype">
             <datalist id="stormtype" name="stormtype">
                 <option value="flash flood">Flash Flood</option>
                 <option value="hail">Hail</option>
@@ -60,14 +60,14 @@
                 <option value="thunderstorm">Thunderstorm</option>
                 <option value="tornado">Tornado</option>
                 <option value="blizzard">Blizzard</option>
-            </datalist>
-            Storm Severity: <input id="stormseverity" type="range" min="1" max="10" />
-            Storm Region: <select>
+            </datalist></p>
+            <p>Storm Severity: <input id="stormseverity" type="range" min="1" max="10" />
+                <p>Storm Region: <select>
                 <option value="preston">Preston</option>
                 <option value="sodasprings">Soda Springs</option>
                 <option value="fishhaven">Fish Haven</option>
-            </select>
-            User in-danger Level:
+            </select></p>
+            <p>User in-danger Level:
             <fieldset>
                 <legend>Are you in any danger?</legend>
                 <ul class="radio-list">
@@ -75,10 +75,10 @@
                     <li><label><input type="radio" name="option" value="maybe"> Maybe</label></li>
                     <li><label><input type="radio" name="option" value="no"> No</label></li>
                 </ul>
-            </fieldset>
-            <label for="subject">Additional Information or Comments:</label>
-            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
-            <input type="submit" value="Submit">
+            </fieldset></p>
+            <p><label for="subject">Additional Information or Comments:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea></p>
+            <input onclick="window.location.href = 'thanks.html'" type="submit" value="Submit">
         </form>
     </main>
     <footer>
