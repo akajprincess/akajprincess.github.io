@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Preest Idaho Weather and Town News">
+    <meta name="description" content="Preston, Idaho Weather and Town News">
     <meta name="author" content="Amber Thomsen">
     <meta name="theme-color" content="#98b9f2" />
     <meta name="keywords" content="Weather, Town News, Preston, Soda Springs, Fish Haven, Storm Center, Gallery">
@@ -41,7 +41,43 @@
         </ul>
     </nav>
     <main>
-   
+        <form action="/action_page.php" method="get">
+            <label for="fname">Full Name</label>
+            <input type="text" id="fname" name="fullname" pattern="[A-Za-z\s]{5,}" placeholder="Your name.." required>
+            <label for="phone">Enter your phone number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"
+                required>
+            Email: <input type="email" placeholder="usersemail@email.org" required>
+            Zip code: <input id="zip" name="zip" type="number" pattern="[0-9]*" required>
+            Storm Date: <input type="date" name="stormdate">
+            Storm Type: <input list="stormtype" name="stormtype">
+            <datalist id="stormtype" name="stormtype">
+                <option value="flash flood">Flash Flood</option>
+                <option value="hail">Hail</option>
+                <option value="hurricane">Hurricane</option>
+                <option value="thunderstorm">Thunderstorm</option>
+                <option value="tornado">Tornado</option>
+                <option value="blizzard">Blizzard</option>
+            </datalist>
+            Storm Severity: <input id="stormseverity" type="range" min="1" max="10" />
+            Storm Region: <select>
+                <option value="preston">Preston</option>
+                <option value="sodasprings">Soda Springs</option>
+                <option value="fishhaven">Fish Haven</option>
+            </select>
+            User in-danger Level:
+            <fieldset>
+                <legend>Are you in any danger?</legend>
+                <ul class="radio-list">
+                    <li><label><input type="radio" name="option" value="yes"> Yes</label></li>
+                    <li><label><input type="radio" name="option" value="maybe"> Maybe</label></li>
+                    <li><label><input type="radio" name="option" value="no"> No</label></li>
+                </ul>
+            </fieldset>
+            <label for="subject">Additional Information or Comments:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+            <input type="submit" value="Submit">
+        </form>
     </main>
     <footer>
         <p>
