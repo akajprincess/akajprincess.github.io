@@ -56,7 +56,7 @@ header {
 
 
 nav {
-	background-color: #0b3142;;
+	background-color: #0b3142;
 
 }
 
@@ -113,7 +113,7 @@ height: auto;
   position: absolute;
   top: 10px;
 	left: 10px;
-	background-color: #36454f;
+	background-color:  rgb(73, 96, 110);
 	border: solid thick#395243;
 	border-radius: 15px;
 	padding: 10px;
@@ -132,6 +132,9 @@ height: auto;
 
 .forecast {
 	display: none;
+	background-color: #6b90a1;
+	border-radius: 15px;
+	padding: 10px;
 }
 
 .article img {
@@ -140,7 +143,7 @@ height: auto;
 }
 
 .article {
-	background-color: rgb(54, 69, 79);
+	background-color: rgb(73, 96, 110);
 	padding: 8px;
 	border-radius: 15px;
 }
