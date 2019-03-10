@@ -1,0 +1,163 @@
+* {
+	margin:10;
+	padding:5;
+}
+
+body{
+		background-color: #395243;
+		font-size: 16px;
+}
+
+main, footer {
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+h1,h2,h3,h4{
+	font-family:'Josefin Sans', sans-serif;
+	color: #0b3142;
+}
+h4{
+	font-family: 'Indie Flower', cursive;
+	color: #1478a7;
+}
+
+p{
+	font-family: 'Raleway', sans-serif;
+	color:  #25082e;
+}
+
+img {
+	border-radius: 15px;
+}
+
+header {
+	margin: 10px auto;
+	border: 1px solid #395243;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo img {
+	width: 100px;
+	height: auto;
+}
+
+.headertext {
+	display: flex;
+	flex-direction: column;
+}
+
+.motto {
+	margin-top: -10px;
+}
+
+
+nav {
+	background-color: #0b3142;
+
+}
+
+.topnav {
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+
+} 
+
+.topnav li {
+	display: none;
+
+}
+
+.topnav li:first-child {
+	display: block;
+}
+
+.topnav li a {
+  display: block;
+  padding: 8px;
+	text-decoration: none;
+	background-color: #0b2e53;
+	color: #000;
+	text-align: center;
+	font-size: 1.2rem;
+}
+
+.topnav li a:hover {
+	color: #0b3142;
+	border-radius: 5px;
+	box-shadow: 5px 5px 5px;
+	}
+
+.topnav li.active {
+	text-decoration: underline;
+}
+
+.responsive li {
+	display: block;
+}
+
+.herosection {
+	position: relative;
+}
+
+.herosection img {
+width: 100%;
+height: auto;
+}
+
+.top-left {
+  position: absolute;
+  top: 10px;
+	left: 10px;
+	background-color:  rgb(73, 96, 110);
+	border: solid thick#395243;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.weathersummary {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: .5rem;
+}
+
+.weathersummary p:nth-child(odd) {
+	text-align: right;
+}
+
+
+.forecast {
+	display: none;
+	background-color: #6b90a1;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.article img {
+	width: 100%;
+	height: auto;
+}
+
+.article {
+	background-color: rgb(73, 96, 110);
+	padding: 8px;
+	border-radius: 15px;
+}
+
+
+footer {
+	margin: 0 auto;
+	text-align: center;
+	justify-content: space-between;
+	border-top:solid 2px #1f2a63;
+	padding: 10px;
+	line-height: 3em;
+	display:flex;
+		  flex-flow: row wrap;
+		  flex: 1 0 15em;  
+}
+
