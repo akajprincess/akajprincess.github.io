@@ -1,0 +1,116 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston, Idaho Weather and Town News">
+    <meta name="author" content="Amber Thomsen">
+    <meta name="theme-color" content="#98b9f2" />
+    <meta name="keywords" content="Weather, Town News, Preston, Soda Springs, Fish Haven, Storm Center, Gallery">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
+    <link href="css/small-5.css" type="text/css" rel="stylesheet" />
+    <link href="css/large-5.css" type="text/css" rel="stylesheet" />
+
+
+    <title>Home Page</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/oquirrhsunrise.jpeg" alt="weather logo" class="landscape">
+        </div>
+        <div class="headertext">
+            <h1>Smart Weather Travel</h1>
+            <div class="motto">
+                Washing Machines Live Longer with Smart Weather Travel.
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="topnav">
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="preston-7.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery-7.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Home Page</h1>
+        <section>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>
+            &copy;2019 | Amber Katheryn Anne Thomsen | Utah | <a href="#">Attributions</a> <span
+                id="currentDate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script>
+        var header = document.querySelector('header');
+        var section = document.querySelector('section');
+        var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseType = 'json';
+        request.send();
+        request.onload = function () {
+            var superHeroes = request.response;
+            showHeroes(superHeroes);
+        }
+        function showHeroes(jsonObj) {
+            var heroes = jsonObj['towns'];
+            for (var i = 0; i < heroes.length; i++) {
+                if (heroes[i].name == "Fish Haven" || heroes[i].name == "Preston" || heroes[i].name == "Soda Springs") {
+                    var myArticle = document.createElement('article');
+                    var myH2 = document.createElement('h2');
+                    var myPara1 = document.createElement('p');
+                    var myPara2 = document.createElement('p');
+                    var myPara3 = document.createElement('p');
+                    var myPara4 = document.createElement('p');
+                    var myPara5 = document.createElement('p');
+                    var image = document.createElement('img');
+                    var myList = document.createElement('ul');
+                    myH2.textContent = heroes[i].name;
+                    myPara1.textContent = 'motto: ' + heroes[i].motto;
+                    myPara2.textContent = 'year founded: ' + heroes[i].yearFounded;
+                    myPara3.textContent = 'current population: ' + heroes[i].currentPopulation;
+                    myPara4.textContent = 'average rainfall: ' + heroes[i].averageRainfall;
+                    var events = heroes[i].events;
+                    for (var j = 0; j < events.length; j++) {
+                        var listItem = document.createElement('li');
+                        listItem.textContent = events[j];
+                        myList.appendChild(listItem);
+                    }
+                    if (heroes[i].name == "Fish Haven")
+                        image.src = "images/fishhaven.jpg";
+                    else if (heroes[i].name == "Preston")
+                        image.src = "images/napdyno.jpg";
+                    else
+                        image.src = "images/sodasprings.jpg";
+                    myArticle.appendChild(myH2);
+                    myArticle.appendChild(myPara1);
+                    myArticle.appendChild(myPara2);
+                    myArticle.appendChild(myPara3);
+                    myArticle.appendChild(myList);
+                    myArticle.appendChild(image);
+                    section.appendChild(myArticle);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
