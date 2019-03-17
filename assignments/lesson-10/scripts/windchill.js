@@ -1,8 +1,8 @@
-var tempF = parseFloat(document.getElementById('tempF').innerHTML);
+var tempF = parseFloat(document.getElementById('current-temp').innerHTML);
 var speed = parseFloat(document.getElementById('windspeed').innerHTML);
 var chill = windChill(tempF, speed)
 
-document.getElementById("windchill").innerHTML = chill.toFixed(2) + "&deg;F";
+// document.getElementById("windchill").innerHTML = chill.toFixed(2) + "&deg;F";
 
 
 function windChill(tempF, speed) {

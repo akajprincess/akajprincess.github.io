@@ -48,11 +48,11 @@
                 <h3>Weather Summary</h3>
                 <div class="weathersummary">
                     <p>Currently: </p>
-                    <p>Sunny</p>
+                    <p><div id="weather"></div><span><img id="weather-icon" src="" alt="" /></span></p>
                     <p>Temperature: </p>
-                    <p id="tempF">89&deg;F</p>
+                    <p><span id="current-temp"></span>&deg; F</p>
                     <p>Wind Speed: </p>
-                    <p id="windspeed">25 mph</p>
+                    <p><span id="windspeed"></span>25 mph</p>
                     <p>Wind Chill: </p>
                     <p id="windchill"></p>
                 </div>
@@ -65,21 +65,21 @@
                 <thead>
                     <tr>
                         <th class="tright">Day</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                        <th>Sun</th>
+                        <th id="day0">Wed</th>
+                        <th id="day1">Thu</th>
+                        <th id="day2">Fri</th>
+                        <th id="day3">Sat</th>
+                        <th id="day4">Sun</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th class="tright">Forecast</th>
-                        <td>89&deg;F</td>
-                        <td>87&deg;F</td>
-                        <td>78&deg;F</td>
-                        <td>75&deg;F</td>
-                        <td>72&deg;F</td>
+                        <td><img id="temp_img0" src="" alt=""/><div id="temp0">89&deg;F</div></td>
+                        <td><img id="temp_img1" src="" alt=""/><div id="temp1">87&deg;F</div></td>
+                        <td><img id="temp_img2" src="" alt=""/><div id="temp2">78&deg;F</div></td>
+                        <td><img id="temp_img3" src="" alt=""/><div id="temp3">75&deg;F</div></td>
+                        <td><img id="temp_img4" src="" alt=""/><div id="temp4">72&deg;F</div></td>
                     </tr>
                 </tbody>
             </table>
@@ -91,9 +91,12 @@
             <img src="images/napdyno.jpg" alt="article image">
             <p>This fall after reflecting upon last year's event held in the overflowing Foundation park, I realized
                 that I have been taking the festival for granted all these years and have not been properly engaging in
-                perhaps the most popular community event of the year. In response, I contacted Ms. Sharon via email and expressed my
-                desire to serve on the committee. Well, the phone rings immediately and she promptly asked me to be the chair of
-                said event, quite the turnaround. My appreciation for the years of dedicated, generous service of volunteers and sponsors has escalated
+                perhaps the most popular community event of the year. In response, I contacted Ms. Sharon via email and
+                expressed my
+                desire to serve on the committee. Well, the phone rings immediately and she promptly asked me to be the
+                chair of
+                said event, quite the turnaround. My appreciation for the years of dedicated, generous service of
+                volunteers and sponsors has escalated
                 beyond what I thought I could feel for such a thing and ...
                 <small>
                     <a href="#">continue to full article</a>
@@ -119,6 +122,7 @@
 
     <script src="scripts/currentdate.js" defer></script>
     <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
     <script src="scripts/windchill.js" defer></script>
 </body>
 
