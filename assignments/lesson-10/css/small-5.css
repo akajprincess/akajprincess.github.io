@@ -15,7 +15,7 @@ main, footer {
 
 h1,h2,h3,h4{
 	font-family:'Josefin Sans', sans-serif;
-	color: #0b3142;
+	color: #4e839b;
 }
 h4{
 	font-family: 'Indie Flower', cursive;
@@ -24,7 +24,7 @@ h4{
 
 p{
 	font-family: 'Raleway', sans-serif;
-	color:  #25082e;
+	color:  #9e7ba8;
 }
 
 img {
@@ -81,7 +81,7 @@ nav {
   padding: 8px;
 	text-decoration: none;
 	background-color: #0b2e53;
-	color: #000;
+	color: rgb(240, 236, 236);
 	text-align: center;
 	font-size: 1.2rem;
 }
