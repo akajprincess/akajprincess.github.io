@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Preston, Idaho Weather and Town News">
+    <meta name="author" content="Amber Thomsen">
+    <meta name="theme-color" content="#98b9f2" />
+    <meta name="keywords" content="Weather, Town News, Preston, Soda Springs, Fish Haven, Storm Center, Gallery">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Josefin+Sans|Raleway" rel="stylesheet" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link href="css/small.css" type="text/css" rel="stylesheet" />
+    <link href="css/large.css" type="text/css" rel="stylesheet" />
+
+    <title>Fish Haven</title>
+</head>
+
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/oquirrhsunrise.jpeg" alt="weather logo" class="landscape">
+        </div>
+        <div class="headertext">
+            <h1>Smart Weather Travel</h1>
+            <div class="motto">
+                Washing Machines Live Longer with Smart Weather Travel.
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="topnav">
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="preston.html">Preston</a></li>
+            <li><a href="sodasprings.html">Soda Springs</a></li>
+            <li class="active"><a href="fishhaven.html">Fish Haven</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>Preston, Idaho</h2>
+        <div class="herosection">
+            <img src="images/fishhavenbearlake.jpg" alt="hero image" class="hero">
+            <div class="top-left">
+                <h3>Weather Summary</h3>
+                <div class="weathersummary">
+                    <p>Currently: </p>
+                    <p><div id="fishhaven-weather"></div><span><img id="fishhaven-weather-icon" src="" alt="" /></span></p>
+                    <p>Temperature: </p>
+                    <p><span id="fishhaven-current-temp"></span>&deg; F</p>
+                    <p>Wind Speed: </p>
+                    <p><span id="fishhaven-windspeed"></span>25 mph</p>
+                    <p>Wind Chill: </p>
+                    <p id="fishhaven-windchill"></p>
+                </div>
+            </div>
+        </div>
+
+        <section class="forecast">
+            <h3>5 Day Temperature Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th class="tright">Day</th>
+                        <th id="fishhaven-day0">Wed</th>
+                        <th id="fishhaven-day1">Thu</th>
+                        <th id="fishhaven-day2">Fri</th>
+                        <th id="fishhaven-day3">Sat</th>
+                        <th id="fishhaven-day4">Sun</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th class="tright">Forecast</th>
+                        <td><img id="fishhaven-temp_img0" src="" alt=""/><div id="fishhaven-temp0">89&deg;F</div></td>
+                        <td><img id="fishhaven-temp_img1" src="" alt=""/><div id="fishhaven-temp1">87&deg;F</div></td>
+                        <td><img id="fishhaven-temp_img2" src="" alt=""/><div id="fishhaven-temp2">78&deg;F</div></td>
+                        <td><img id="fishhaven-temp_img3" src="" alt=""/><div id="fishhaven-temp3">75&deg;F</div></td>
+                        <td><img id="fishhaven-temp_img4" src="" alt=""/><div id="fishhaven-temp4">72&deg;F</div></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section class="article">
+            <h3>Article title</h3>
+            <h4>By Author</h4>
+            <img src="images/fishhaven.jpg" alt="article image">
+            <p>This fall after reflecting upon last year's event held in the overflowing Foundation park, I realized
+                that I have been taking the festival for granted all these years and have not been properly engaging in
+                perhaps the most popular community event of the year. In response, I contacted Ms. Sharon via email and
+                expressed my
+                desire to serve on the committee. Well, the phone rings immediately and she promptly asked me to be the
+                chair of
+                said event, quite the turnaround. My appreciation for the years of dedicated, generous service of
+                volunteers and sponsors has escalated
+                beyond what I thought I could feel for such a thing and ...
+                <small>
+                    <a href="#">continue to full article</a>
+                </small></p>
+            </article>
+
+        </section>
+        <section class="forecast">
+            <h3>Town Events</h3>
+            <ul id="fishhaven-events">
+            </ul>
+        </section>
+        <section class="contactinformation">
+
+            <h3>Contact Information</h3>
+            <p>Swing by and see our city, or leave us a message!</p>
+            <img src="images/fishhavenmap.gif" alt="fish-haven-idaho map">
+
+        </section>
+        </div>
+    </main>
+    <footer>
+        <p>
+            &copy;2019 | Amber Katheryn Anne Thomsen | Utah |<span
+                id="currentDate"></span>
+        </p>
+    </footer>
+
+    <script src="scripts/currentdate.js" defer></script>
+    <script src="scripts/hamburger.js" defer></script>
+    <script src="scripts/weatherapi.js" defer></script>
+    <script src="scripts/windchill.js" defer></script>
+</body>
+
+</html>
